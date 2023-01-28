@@ -1,0 +1,559 @@
+:root {
+    --textColor: #ffffff;
+    --backColor: #000024;
+    --buttonColor: #CCCCE0;
+    --hoverColor: #00388D;
+    --fonFamily: 'Titillium Web', sans-serif;
+    --africColor: #FFA900;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: var(--fonFamily)
+}
+
+body {
+    background: var(--backColor);
+}
+
+nav {
+    background: var(--backColor);
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid #313131;
+    z-index: 1000;
+}
+
+label.logo {
+    color: white;
+    font-size: 25px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+}
+
+label.logo img {
+    width: 35px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 15px;
+    padding: 7px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    background: var(--hoverColor);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.active,
+.btn:hover {
+    background-color: var(--hoverColor);
+    color: white;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.navlinkSpan {
+    margin-right: 100px;
+}
+
+.PrimaryBtn {
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--buttonColor);
+    font-weight: 600;
+    color: var(--backColor);
+    border: 1px solid var(--buttonColor);
+    outline: none;
+    transform: .5s;
+}
+
+.PrimaryBtn:hover {
+    color: var(--buttonColor);
+    border: 1px solid var(--buttonColor);
+    background: var(--backColor);
+    outline: none;
+    cursor: pointer;
+}
+
+
+.Introduction {
+    width: 100%;
+    position: relative;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, var(--backColor), #00001d);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.Introduction .topLabel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10%;
+    text-align: center;
+    align-self: center;
+    z-index: 1000;
+}
+
+.Introduction .topLabel h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+.Introduction .topLabel h1 span {
+    color: var(--africColor);
+}
+
+.Introduction .topLabel p {
+    color: var(--textColor);
+    width: 50%;
+    margin: 10px 0;
+}
+
+.Introduction .topLabel span {
+    margin: 20px 0;
+}
+
+.Introduction .bottomLabel .experRate {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.Introduction .bottomLabel .experRate span {
+    text-align: center;
+}
+
+.Introduction .bottomLabel .experRate span h3 {
+    color: var(--africColor);
+}
+
+.Introduction .bottomLabel .experRate span label {
+    color: var(--africColor);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.Introduction .bottomLabel .experRate span small {
+    color: var(--textColor);
+}
+
+.counter {
+    color: var(--textColor);
+}
+
+.blurBackground {
+    position: absolute;
+    width: auto;
+    top: 0;
+    right: 0;
+}
+
+.blurBackground .secondBlur {
+    width: 100px;
+    height: 100px;
+    padding: 300px;
+    border-radius: 50%;
+    filter: blur(130px);
+    position: absolute;
+    background-color: #00388d6c;
+    right: 50px;
+}
+
+
+.aboutBox {
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.aboutBox .aboutLeft {
+    padding: 20px;
+}
+
+.aboutBox .aboutLeft h3 {
+    color: var(--africColor);
+}
+
+.aboutBox .aboutLeft h1 {
+    color: var(--textColor);
+}
+
+.aboutBox .aboutLeft p {
+    color: var(--buttonColor);
+    margin: 10px 0;
+}
+
+.aboutBox .aboutRight {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.aboutBox .aboutRight span {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--buttonColor);
+    background: var(--textColor);
+    position: relative;
+    padding: 50px;
+}
+
+.aboutBox .aboutRight .aboutImgOne {
+    display: grid;
+    grid-row: span 2;
+    background-image: url(../assets/Images/IMG_2680.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutBox .aboutRight .aboutImgTwo{
+    background-image: url(../assets/Images/IMG_2690.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutBox .aboutRight .aboutImgFour{
+    background-image: url(../assets/Images/IMG_2702.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.aboutBox .aboutRight .aboutImgThree {
+    grid-row: span 2;
+    display: grid;
+    background-image: url(../assets/Images/IMG_2758.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutBox .aboutRight span {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.aboutBox .aboutRight span .small{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    right: -100%;
+    width: 100%;
+    transform: translate(-50% -50%);
+    text-align: center;
+    top: 0;
+    height: 100%;
+    color: var(--textColor);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+
+.aboutBox .aboutRight span:hover .small {
+    right: 0;
+    cursor: cell;
+}
+
+.chooseUsBox{
+    width: 100%;
+    padding: 30px 20px;
+    background: #00001d;
+}
+.chooseUsBox h1{
+    color: var(--textColor);
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 3rem;
+    margin: 10px;
+}
+
+.chooseUsBox .chooseContent{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid var(--buttonColor);
+}
+
+.chooseUsBox .chooseContent h3{
+    color: var(--africColor);
+    margin: 10px 0;
+}
+
+.chooseUsBox .chooseContent p{
+    color: var(--buttonColor);
+}
+
+.chooseUsBox .chooseContent i{
+    padding: 10px;
+    background: rgba(87, 87, 87, 0.356);
+    border-radius: 50%;
+    color: var(--textColor);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .Introduction {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--backColor);
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    .Introduction .topLabel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10%;
+        text-align: start;
+        align-self: flex-start;
+    }
+
+    .Introduction .topLabel h1 {
+        color: white;
+        font-size: 30px;
+    }
+
+    .Introduction .topLabel h1 span {
+        color: var(--africColor);
+        float: left;
+    }
+
+    .Introduction .topLabel p {
+        color: var(--textColor);
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .Introduction .topLabel span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+        align-self: flex-start;
+    }
+
+
+}
+
+@media (max-width: 1074px) {
+    .blurBackground .secondBlur {
+        padding: 300px;
+        right: 50px;
+    }
+
+    label.logo {
+        font-size: 35px;
+        padding-left: 30px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .navlinkSpan {
+        margin: 0;
+    }
+
+    .PrimaryBtn {
+        margin-bottom: 20px;
+    }
+
+    .aboutBox {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .aboutBox .aboutLeft {
+        padding: 0;
+    }
+
+    .aboutBox .aboutRight {
+        grid-template-columns: 1fr;
+    }
+    .aboutBox .aboutRight span{
+        height: 350px;
+    }
+
+    .aboutBox .aboutRight .aboutImgOne {
+        display: block;
+        grid-row: auto;
+    }
+
+    .aboutBox .aboutRight .aboutImgThree {
+        display: block;
+        grid-row: auto;
+    }
+
+    .chooseUsBox .chooseContent{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 20px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .chooseUsBox h1{
+        font-size: 30px;
+        padding: 20px 0;
+        border-bottom: 1px solid #4a4a4b;
+    }
+}
+
+@media (max-width: 1074px) {
+    .navlinkSpan {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1074px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--backColor);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .navlinkSpan {
+        margin: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    label.logo {
+        font-size: 20px;
+        padding-left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Introduction .bottomLabel .experRate {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    .Introduction .bottomLabel .experRate {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+}
