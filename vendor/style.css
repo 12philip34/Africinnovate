@@ -13,11 +13,20 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    font-family: var(--fonFamily)
+    font-family: var(--fonFamily);
 }
 
 body {
     background: var(--backColor);
+}
+
+nav,
+.Introduction,
+.aboutBox,
+.chooseUsBox,
+.serviceBox,
+.footer{
+    overflow: hidden;
 }
 
 nav {
@@ -59,8 +68,8 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-a.active,
-a:hover {
+.navlinkSpan li a.active,
+.navlinkSpan li a:hover {
     background: var(--hoverColor);
     transition: .5s;
     cursor: pointer;
@@ -204,7 +213,9 @@ a:hover {
 }
 
 
-.aboutBox {
+.aboutBox,
+.servicesContent,
+.servicesBottom {
     width: 100%;
     height: 80vh;
     display: grid;
@@ -227,7 +238,9 @@ a:hover {
     color: var(--textColor);
 }
 
-.aboutBox .aboutLeft p {
+.aboutBox .aboutLeft p,
+.bottomLeft p,
+.bottomRight p {
     color: var(--buttonColor);
     margin: 10px 0;
 }
@@ -245,7 +258,7 @@ a:hover {
     border: 1px solid var(--buttonColor);
     background: var(--textColor);
     position: relative;
-    padding: 50px;
+    padding: 30px;
 }
 
 .aboutBox .aboutRight .aboutImgOne {
@@ -256,13 +269,13 @@ a:hover {
     background-size: cover;
 }
 
-.aboutBox .aboutRight .aboutImgTwo{
+.aboutBox .aboutRight .aboutImgTwo {
     background-image: url(../assets/Images/IMG_2690.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.aboutBox .aboutRight .aboutImgFour{
+.aboutBox .aboutRight .aboutImgFour {
     background-image: url(../assets/Images/IMG_2702.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -283,10 +296,10 @@ a:hover {
     overflow: hidden;
 }
 
-.aboutBox .aboutRight span .small{
+.aboutBox .aboutRight span .small {
     position: absolute;
     background: rgba(0, 0, 0, 0.8);
-    right: -100%;
+    left: -100%;
     width: 100%;
     transform: translate(-50% -50%);
     text-align: center;
@@ -299,16 +312,52 @@ a:hover {
 }
 
 .aboutBox .aboutRight span:hover .small {
-    right: 0;
+    left: 0;
     cursor: cell;
 }
 
-.chooseUsBox{
+.hoverText{
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.623);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.hoverTextOpposite{
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.623);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+}
+
+.hoverText i,
+.hoverTextOpposite i{
+    color: var(--textColor);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+}
+
+.chooseUsBox {
     width: 100%;
     padding: 30px 20px;
     background: #00001d;
 }
-.chooseUsBox h1{
+
+.chooseUsBox h1,
+.serviceBox h1,
+.blog h1 {
     color: var(--textColor);
     text-align: center;
     text-transform: capitalize;
@@ -316,7 +365,7 @@ a:hover {
     margin: 10px;
 }
 
-.chooseUsBox .chooseContent{
+.chooseUsBox .chooseContent {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -328,37 +377,238 @@ a:hover {
     border: 2px solid var(--buttonColor);
 }
 
-.chooseUsBox .chooseContent h3{
+.chooseUsBox .chooseContent h3 {
     color: var(--africColor);
     margin: 10px 0;
 }
 
-.chooseUsBox .chooseContent p{
+.chooseUsBox .chooseContent p {
     color: var(--buttonColor);
 }
 
-.chooseUsBox .chooseContent i{
+.chooseUsBox .chooseContent i {
     padding: 10px;
     background: rgba(87, 87, 87, 0.356);
     border-radius: 50%;
     color: var(--textColor);
 }
 
+.servicesLeft {
+    padding: 20px;
+}
+
+.servicesLeft h1 {
+    color: var(--textColor);
+    text-align: start;
+    font-size: 30px;
+    margin: 0;
+}
+
+.servicesLeft p {
+    color: var(--buttonColor);
+    margin: 10px 0;
+}
+
+.servicesRight {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicesRight img {
+    width: 100%;
+}
+
+.serviceBox {
+    padding: 20px;
+}
+
+.serviceBox .servicesContent,
+.servicesBottom .bottomLeft,
+.servicesBottom .bottomRight {
+    background: rgba(29, 161, 242, 0.2);
+    box-shadow: inset 0px 2px 5px #FFFFFF;
+    backdrop-filter: blur(5px);
+    border-radius: 16px;
+    transition: all 1s;
+}
+
+.serviceBox .servicesContent:hover,
+.servicesBottom .bottomLeft:hover,
+.servicesBottom .bottomRight:hover {
+    background: #000024;
+    box-shadow: inset 0px 2px 5px #041449;
+}
+
+.serviceBox .servicesContent:hover .servicesRight img {
+    transform: scale(calc(100% + 10%));
+    transition: all 1s;
+}
+
+.servicesBottom {
+    gap: 30px;
+    margin-top: -100px;
+}
+
+.servicesBottom .bottomLeft,
+.servicesBottom .bottomRight {
+    padding: 20px;
+}
+
+.servicesBottom .bottomLeft h1,
+.servicesBottom .bottomRight h1 {
+    text-align: start;
+    margin: 0;
+    font-size: 30px;
+}
+
+.blog {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.blogContent {
+    width: 100%;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    justify-content: center;
+    align-items: center;
+}
+
+.blogLeft {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/Images/IMG_2690.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border: 1px solid #CCCCE0;
+}
+
+
+.blog .blogContent .blogRight span:nth-child(1) {
+    background-image: url(../assets/Images/IMG_2680.jpg);
+    background-size: cover;
+    margin: 20px;
+    padding: 20px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 500px;
+    height: 150px
+}
+
+.blog .blogContent .blogRight span:nth-child(2) {
+    background-image: url(../assets/Images/IMG_2702.jpg);
+    background-size: cover;
+    margin: 20px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 500px;
+    height: 150px;
+}
+
+.blog .blogContent .blogRight span:nth-child(3) {
+    background-image: url(../assets/Images/IMG_2758.jpg);
+    background-size: cover;
+    margin: 20px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 500px;
+    height: 150px;
+}
+
+.blogRight {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.blogRight span {
+    padding: 20px;
+    border: 1px solid #CCCCE0;
+}
+
+.footer {
+    width: 100%;
+    display: grid;
+    padding: 30px 20px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #CCCCE0;
+}
+
+.footerLeft span {
+    color: var(--textColor);
+    margin-top: -20px;
+}
+
+.footerLeft h4 {
+    color: var(--africColor);
+    font-size: 10px;
+    padding: 10px 0;
+}
+
+.footerLeft span i {
+    padding-right: 10px;
+    transition: .5s;
+}
+
+.footerLeft span i:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(calc(100% + 12%));
+}
+
+.footerLeft span img {
+    width: 30px;
+}
+
+
+.footerMiddle h3{
+    color: var(--textColor);
+}
+
+.footerMiddle label{
+   display: flex;
+   flex-direction: column;
+   margin: 10px 0;
+}
+
+.footerMiddle label span{
+    color: var(--textColor);
+}
+
+.footerRight p{
+    color: var(--textColor);
+    margin-bottom: 10px;
+}
 
 
 
 
+@media (max-width: 425px) {
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+        column-gap: 30px;
+    }
+}
 
 @media (max-width: 768px) {
     .Introduction {
@@ -407,7 +657,48 @@ a:hover {
         align-self: flex-start;
     }
 
+    .blogContent {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
 
+    .blog .blogContent .blogRight span:nth-child(1) {
+        width: 250px;
+        height: 150px;
+    }
+
+    .blog .blogContent .blogRight span:nth-child(2) {
+        width: 250px;
+        height: 150px;
+    }
+
+    .blog .blogContent .blogRight span:nth-child(3) {
+        width: 250px;
+        height: 150px;
+    }
+
+    .blogLeft {
+        width: 100%;
+        height: 200px;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+    .blog .blogContent .blogRight span:nth-child(1) {
+        width: 400px;
+        height: 150px;
+    }
+
+    .blog .blogContent .blogRight span:nth-child(2) {
+        width: 400px;
+        height: 150px;
+    }
+
+    .blog .blogContent .blogRight span:nth-child(3) {
+        width: 400px;
+        height: 150px;
+    }
 }
 
 @media (max-width: 1074px) {
@@ -433,7 +724,14 @@ a:hover {
         margin-bottom: 20px;
     }
 
-    .aboutBox {
+    .servicesBottom {
+        padding: 0;
+        margin: 20px 0;
+    }
+
+    .aboutBox,
+    .servicesContent,
+    .servicesBottom {
         display: grid;
         grid-template-columns: 1fr;
         height: auto;
@@ -446,7 +744,8 @@ a:hover {
     .aboutBox .aboutRight {
         grid-template-columns: 1fr;
     }
-    .aboutBox .aboutRight span{
+
+    .aboutBox .aboutRight span {
         height: 350px;
     }
 
@@ -460,7 +759,7 @@ a:hover {
         grid-row: auto;
     }
 
-    .chooseUsBox .chooseContent{
+    .chooseUsBox .chooseContent {
         display: grid;
         width: 100%;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -472,10 +771,25 @@ a:hover {
         border: none;
     }
 
-    .chooseUsBox h1{
+    .chooseUsBox h1 {
         font-size: 30px;
         padding: 20px 0;
         border-bottom: 1px solid #4a4a4b;
+    }
+
+
+    .serviceBox .servicesContent h1 {
+        font-size: 28px;
+        padding: 20px 0;
+        border-bottom: 1px solid #4a4a4b;
+    }
+
+    .serviceBox .servicesContent p {
+        padding: 20px 0;
+    }
+
+    .blogLeft {
+        height: 400px;
     }
 }
 

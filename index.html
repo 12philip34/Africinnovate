@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal - www.codingnepalweb.com -->
 <html lang="en" dir="ltr">
 
 <head>
     <meta charset="utf-8">
-    <title>Responsive Navbar | CodingNepal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./vendor/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="https://kit.fontawesome.com/1da0e09c29.css" crossorigin="anonymous">
+    <title>Responsive Navbar | CodingNepal</title>
 </head>
 
 <body>
@@ -22,55 +21,51 @@
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-        <label class="logo"> <img src="./assets/Images/LOGO.png" alt=""> Africinnovate</label>
+        <label class="logo" data-aos="fade-down" data-aos-duration="1000"> <img src="./assets/Images/LOGO.png" alt="logo.png"> Africinnovate</label>
         <ul>
             <span class="navlinkSpan" id="myDIV">
-                <li><a href="/training" class="btn ">Training</a></li>
-                <li><a href="/about" class="btn ">About Us</a></li>
-                <li><a href="/contact" class="btn ">Contact Us</a></li>
-                <li><a href="/blog" class="btn ">Blog</a></li>
+                <li data-aos="fade-left" data-aos-duration="2000"><a href="/Pages/Training/index.html" class="btn ">Training</a></li>
+                <li data-aos="fade-left" data-aos-duration="1500"><a href="/Pages/About/index.html" class="btn ">About Us</a></li>
+                <li data-aos="fade-left" data-aos-duration="1000"><a href="/Pages/Contact/index.html" class="btn ">Contact Us</a></li>
+                <li data-aos="fade-left" data-aos-duration="500"><a href="/Pages/Blog/index.html" class="btn ">Blog</a></li>
             </span>
-            <button class="PrimaryBtn">Primary CTA Button</button>
+            <button class="PrimaryBtn" data-aos="fade-up">Primary CTA Button</button>
         </ul>
     </nav>
     <div class="Introduction">
         <div class="topLabel">
-            <h1 data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="500">
+            <h1 data-aos="fade-up" data-aos-duration="2000">
                 We are passionate young software engineers that use <span>cutting-edge</span>
             </h1>
-            <p data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="900">By
+            <p data-aos="fade-up" data-aos-duration="1500">By
                 developing Mobile and Web applications that works, we help our clients deliver quality services to
                 their existing and potential customers.</p>
-            <span data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="1200">
+            <span data-aos="fade-down" data-aos-duration="1000">
                 <button class="PrimaryBtn">Primary CTA Button</button></span>
         </div>
         <div class="bottomLabel" id="section_counter">
             <label class="experRate container">
-                <span class="counter-item" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"
-                    data-aos-duration="500">
+                <span class="counter-item" data-aos="fade-up" data-aos-duration="2000">
                     <label>
                         <h3 class="counter" data-target="100">0</h3>+
                     </label>
                     <small>Student Trained</small>
                 </span>
-                <span class="counter-item" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"
-                    data-aos-duration="1000">
+                <span class="counter-item" data-aos="fade-up" data-aos-duration="1500">
                     <label>
                         <h3 class="counter" data-target="90">0</h3>+
                     </label>
 
                     <small>Student Trained</small>
                 </span>
-                <span class="counter-item" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"
-                    data-aos-duration="1500">
+                <span class="counter-item" data-aos="fade-up" data-aos-duration="1000">
                     <label>
                         <h3 class="counter" data-target="70">0</h3>+
                     </label>
 
                     <small>Student Trained</small>
                 </span>
-                <span class="counter-item" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"
-                    data-aos-duration="2000">
+                <span class="counter-item" data-aos="fade-up" data-aos-duration="500">
                     <label>
                         <h3 class="counter" data-target="110">0</h3>+
                     </label>
@@ -86,119 +81,188 @@
     <div class="aboutBox">
         <div class="aboutLeft">
             <div class="aboutContent">
-                <h3>About Us</h3>
-                <h1>Who are we</h1>
-                <p>
+                <h3 data-aos="zoom-out-right" data-aos-duration="2000">About Us</h3>
+                <h1 data-aos="zoom-out-right" data-aos-duration="1500">Who are we</h1>
+                <p data-aos="zoom-out-right" data-aos-duration="1000">
                     By developing Mobile and Web applications that works, we help our clients deliver quality services
                     to their existing and potential customers.
                     We have done it several times, we would sure to do it again!
                 </p>
-                <button class="PrimaryBtn">Learn More</button>
+                <button class="PrimaryBtn" data-aos="zoom-out-right" data-aos-duration="500">Learn More</button>
             </div>
         </div>
         <div class="aboutRight">
-            <span class="aboutImgOne">
+            <span class="aboutImgOne" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <small class="small">
                     Lorem ipsum dolor sit amet
                     consectetur adipisicing elit. Necessitatibus,
                     nemo!
                 </small>
             </span>
-            <span class="aboutImgTwo">
+            <span class="aboutImgTwo" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
                 <small class="small">
                     Lorem ipsum dolor sit amet
                     consectetur adipisicing elit. Necessitatibus,
                     nemo!
                 </small>
             </span>
-            <span class="aboutImgThree">
+            <span class="aboutImgThree" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                 <small class="small">
                     Lorem ipsum dolor sit amet
                     consectetur adipisicing elit. Necessitatibus,
                     nemo!
                 </small>
             </span>
-            <span class="aboutImgFour">
+            <span class="aboutImgFour" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
                 <small class="small">
                     Lorem ipsum dolor sit amet
                     consectetur adipisicing elit. Necessitatibus,
                     nemo!
                 </small>
             </span>
+        </div>
+    </div>
+    <div class="chooseUsBox">
+        <h1 data-aos="zoom-in">Why choose us</h1>
+        <div class="chooseContent">
+            <span data-aos="fade-up" data-aos-duration="1500">
+                <i class="fa-solid fa-shop"></i>
+                <h3>
+                    Reliable high-speed internet
+                </h3>
+                <p>
+                    Consistent internet connection
+                    while enjoying our conducive workspace.
+                </p>
+            </span>
+            <span data-aos="fade-down" data-aos-duration="1500">
+                <i class="fa-solid fa-shop"></i>
+                <h3>
+                    Top-notch designs
+                </h3>
+                <p>
+                    Get the best design
+                    offer that defines your brand and what
+                    your establishment entails and portrays.
+                </p>
+            </span>
+            <span data-aos="fade-right" data-aos-duration="1500">
+                <i class="fa-solid fa-shop"></i>
+                <h3>
+                    Conducive Work Space
+                </h3>
+                <p>
+                    Tranquil, uninterrupted power supply
+                    as well as internet connection.
+                    Get the best experience here.
+                </p>
+            </span>
+            <span data-aos="fade-left" data-aos-duration="1500">
+                <i class="fa-solid fa-shop"></i>
+                <h3>
+                    Community Friendly
+                </h3>
+                <p>
+                    Stay connected to our community to boost your
+                    learning and growth process.
+                    Also gain access to opportunities in the tech space.
+                </p>
+            </span>
+            <span data-aos="fade-right" data-aos-duration="1500">
+                <i class="fa-solid fa-shop"></i>
+                <h3>
+                    Fast and Quality Product Delivery
+                </h3>
+                <p>
+                    Tranquil, uninterrupted power
+                    supply as well as internet connection.
+                    Get the best experience here.
+                </p>
+            </span>
+            <span data-aos="fade-down" data-aos-duration="1500">
+                <i class="fa-solid fa-shop"></i>
+                <h3>
+                    Home to Startups.
+                </h3>
+                <p>
+                    We are open to be a place
+                    to help your learning and growth process
+            </span>
+        </div>
+    </div>
+    <div class="serviceBox">
+        <h1 data-aos="zoom-in">What we do</h1>
+        <div class="servicesContent">
+            <div class="servicesLeft">
+                <h1 data-aos="fade-up" data-aos-duration="1000">Software Solutions</h1>
+                <p data-aos="fade-left" data-aos-duration="1500">
+                    By developing Mobile and Web applications that works, we help our clients deliver quality services
+                    to their existing and potential customers.
+                    We have done it several times, we would sure to do it again!
+                </p>
+                <button data-aos="fade-down" data-aos-duration="2000" class="PrimaryBtn">Start a Project</button>
+            </div>
+            <div class="servicesRight">
+                <img data-aos="flip-right" src="./assets/Images/whatwedo.png" alt="whatwedo.png">
+            </div>
+        </div>
+        <div class="servicesBottom">
+            <div class="bottomLeft">
+                <h1 data-aos="fade-up" data-aos-duration="1000">Training</h1>
+                <p data-aos="fade-left" data-aos-duration="1500">
+                    We train both mentors and mentees remotely and onsite.
+                    Our methodology equips our students to be job ready and work in a diverse team.
+                </p>
+                <button data-aos="fade-down" data-aos-duration="2000" class="PrimaryBtn">Train With Us</button>
+            </div>
+            <div class="bottomRight">
+                <h1 data-aos="fade-down" data-aos-duration="2000">Co-working Space</h1>
+                <p data-aos="fade-up" data-aos-duration="1000">
+                    Our Office Space is designed with you in mind. Uninterrupted light and internet at affordable rate.
+                    We offer flexible package to accommodate Students & Corp.
+                </p>
+                <button data-aos="fade-left" data-aos-duration="1500" class="PrimaryBtn">Visit us today</button>
+            </div>
+        </div>
+        <div class="blog">
+            <h1 data-aos="zoom-in">Our Blog</h1>
+            <div class="blogContent">
+                <div class="blogLeft" data-aos="flip-up" data-aos-duration="2000">
+
+                </div>
+                <div class="blogRight">
+                    <span data-aos="flip-down" data-aos-duration="2000"></span>
+                    <span data-aos="flip-right" data-aos-duration="1500"></span>
+                    <span data-aos="flip-left" data-aos-duration="1000"></span>
+                </div>
+            </div>
         </div>
         <label class="blurBackground">
             <span class="secondBlur"></span>
         </label>
     </div>
-    <div class="chooseUsBox">
-        <h1>Why choose us</h1>
-        <div class="chooseContent">
+    <div class="footer">
+        <div class="footerLeft" data-aos="fade-left" data-aos-duration="1500">
+            <span><img src="./assets/Images/LOGO.png" alt="logo.png">Africinnovate</span>
+            <h4>Follow Us On</h4>
             <span>
-                <i class="fa-solid fa-shop"></i>
-                <h3>
-                    Lorem, ipsum dolor.
-                </h3>
-                <p>
-                    Lorem ipsum dolor sit 
-                    amet consectetur adipisicing elit.
-                     Numquam cumque aperiam cum voluptatum culpa earum eos ut vero quaerat dicta!
-                </p>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
             </span>
-            <span>
-                <i class="fa-solid fa-shop"></i>
-                <h3>
-                    Lorem, ipsum dolor.
-                </h3>
-                <p>
-                    Lorem ipsum dolor sit 
-                    amet consectetur adipisicing elit.
-                     Numquam cumque aperiam cum voluptatum culpa earum eos ut vero quaerat dicta!
-                </p>
-            </span>
-            <span>
-                <i class="fa-solid fa-shop"></i>
-                <h3>
-                    Lorem, ipsum dolor.
-                </h3>
-                <p>
-                    Lorem ipsum dolor sit 
-                    amet consectetur adipisicing elit.
-                     Numquam cumque aperiam cum voluptatum culpa earum eos ut vero quaerat dicta!
-                </p>
-            </span>
-            <span>
-                <i class="fa-solid fa-shop"></i>
-                <h3>
-                    Lorem, ipsum dolor.
-                </h3>
-                <p>
-                    Lorem ipsum dolor sit 
-                    amet consectetur adipisicing elit.
-                     Numquam cumque aperiam cum voluptatum culpa earum eos ut vero quaerat dicta!
-                </p>
-            </span>
-            <span>
-                <i class="fa-solid fa-shop"></i>
-                <h3>
-                    Lorem, ipsum dolor.
-                </h3>
-                <p>
-                    Lorem ipsum dolor sit 
-                    amet consectetur adipisicing elit.
-                     Numquam cumque aperiam cum voluptatum culpa earum eos ut vero quaerat dicta!
-                </p>
-            </span>
-            <span>
-                <i class="fa-solid fa-shop"></i>
-                <h3>
-                    Lorem, ipsum dolor.
-                </h3>
-                <p>
-                    Lorem ipsum dolor sit 
-                    amet consectetur adipisicing elit.
-                     Numquam cumque aperiam cum voluptatum culpa earum eos ut vero quaerat dicta!
-                </p>
-            </span>
+        </div>
+        <div class="footerMiddle" data-aos="fade-left" data-aos-duration="1500">
+            <h3>Contact Us</h3>
+            <label>
+                <span><i class="fa-duotone fa-envelope"></i>Info@africinnovate.com</span>
+                <span><i class="fa-duotone fa-phone"></i>+234 815 886 8727</span>
+                <span><i class="fa-duotone fa-location-dot"></i>16, Uqua Road, Eket Akwa Ibom State</span>
+            </label>
+        </div>
+        <div class="footerRight" data-aos="fade-left" data-aos-duration="1500">
+            <p>Let's build something awesome together!</p>
+            <button class="PrimaryBtn">Start a Project</button>
         </div>
     </div>
     <script src="./vendor/main.js"></script>

@@ -1,0 +1,110 @@
+:root {
+    --textColor: #ffffff;
+    --backColor: #000024;
+    --buttonColor: #CCCCE0;
+    --hoverColor: #00388D;
+    --fonFamily: 'Titillium Web', sans-serif;
+    --africColor: #FFA900;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: var(--fonFamily)
+}
+
+body {
+    background: var(--backColor);
+}
+
+nav {
+    background: var(--backColor);
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid #313131;
+    z-index: 1000;
+}
+
+label.logo {
+    color: white;
+    font-size: 25px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+}
+
+label.logo img {
+    width: 35px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 15px;
+    padding: 7px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.navlinkSpan li a.active,
+.navlinkSpan li a:hover {
+    background: var(--hoverColor);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.active,
+.btn:hover {
+    background-color: var(--hoverColor);
+    color: white;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.navlinkSpan {
+    margin-right: 100px;
+}
+
+.PrimaryBtn {
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--buttonColor);
+    font-weight: 600;
+    color: var(--backColor);
+    border: 1px solid var(--buttonColor);
+    outline: none;
+    transform: .5s;
+}
+
+.PrimaryBtn:hover {
+    color: var(--buttonColor);
+    border: 1px solid var(--buttonColor);
+    background: var(--backColor);
+    outline: none;
+    cursor: pointer;
+}
